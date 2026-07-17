@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "web": {
+      "development": {
+        "local": 3000,
+        "fallback": "learn-mfes-web.vercel.app"
+      }
+    },
+    "docs": {
+      "development": {
+        "local": 3001
+      },
+      "routing": [
+        {
+          "group": "docs",
+          "paths": ["/docs", "/docs/:path*"]
+        }
+      ]
+    }
+  },
+  "options": {
+    "localProxyPort": 3024
+  }
+}
