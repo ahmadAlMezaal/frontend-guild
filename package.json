@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "learn-mfes",
   "private": true,
   "scripts": {
     "build": "turbo run build",
